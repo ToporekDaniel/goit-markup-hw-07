@@ -27,16 +27,10 @@ body {
   letter-spacing: 0.32px;
   background: #fff;
 }
-
-section {
-  padding: 120px 156px;
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  width: 1158px;
-  padding: 0 15px;
+@media screen and (min-width: 320px) {
+  body {
+    overflow-x: hidden; /
+  }
 }
 
 a {
@@ -72,6 +66,46 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
+
+section {
+  padding: 120px 156px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+}
+
+/* .container {
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px; 
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 .header-block {
   display: flex;
@@ -827,7 +861,7 @@ nav menu .active {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Rozłoży elementy w pionie */
+  justify-content: space-between;
 }
 
 .menu-container.is-open {
