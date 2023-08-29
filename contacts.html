@@ -50,6 +50,21 @@
     <main>
         <div class="smile">
             <h1>MAM NADZIEJĘ ŻE WSZYSTKO DZIAŁA ;-)</h1>
+
+
+            @media screen and (min-width: 768px) {
+            .coś-tam {
+            właściwość: wartość;
+            }
+            }
+            @media screen and (min-width: 1200px) {
+            .coś-tam {
+            właściwość: wartość;
+            }
+            }
+
+
+
         </div>
     </main>
 
@@ -98,11 +113,10 @@
             </div>
             <div class="newsletter">
                 <form class="newsletter-form" name="newsletter-subscription" autocomplete="on" validate>
-                    <label class="newsletter-label">
+                    <label for="newsletter-email" class="newsletter-label">Subscribe</label>
+                    <input type="email" name="newsletter-email" id="newsletter-email" placeholder="E-mail" required />
+                    <button type="submit">
                         Subscribe
-                        <input type="email" name="newsletter-email" placeholder="E-mail" />
-                    </label>
-                    <button type="submit">Subscribe
                         <svg class="subscribe-icon">
                             <use href="./images/icons.svg#icon-subscribe-icon"></use>
                         </svg>
@@ -183,3 +197,9 @@
 </body>
 
 </html>
+
+@media screen and (min-width: 768px) {
+.social-media p{
+text-align: left;
+}
+}
