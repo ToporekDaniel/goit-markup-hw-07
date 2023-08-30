@@ -86,6 +86,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
@@ -437,7 +438,6 @@ footer {
   }
 }
 
-
 .newsletter-form {
   display: flex;
   flex-direction: column;
@@ -467,14 +467,14 @@ align-items: baseline;
 }
 }
 
-
 .newsletter input {
   background-color: var(--navyblue);
   border: 1px solid var(--white);
   border-radius: 4px;
   opacity: 0.3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 398px;
+  width: 100vw;
+  max-width: 398px;
   height: 40px;
   padding: 8px 16px;
   color: var(--white);
@@ -512,14 +512,24 @@ align-items: baseline;
 }
 
 
-
-
 /* MAIN */
 /* HEROIMAGE */
 
+/* @media screen and (min-width: 768px) {
+  .newsletter{
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter{
+    margin-left: 80px;
+  }
+} */
+
 .heroimage {
-  height: 600px;
-  width: 1440px;
+  height: 432px;
+  width: 100%;
+  max-width: 428px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -539,15 +549,47 @@ align-items: baseline;
   background-repeat: no-repeat;
   margin: auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .heroimage {
+    background-image: linear-gradient(
+      90deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url("../images/index-page/people-office-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .heroimage{
+    height: 433px;
+  max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroimage{
+    height: 600px;
+  max-width: 1440px;
+  }
+}
+
+
 .hero-title {
   color: var(--white, #fff);
-  text-align: center;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
-
   width: 496px;
+}
+@media screen and (max-width: 767px) {
+  .hero-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  width: 320px;
+  }
 }
 
 .heroimage button {
