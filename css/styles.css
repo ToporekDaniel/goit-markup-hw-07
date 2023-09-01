@@ -273,6 +273,8 @@ nav menu .active {
   }
 }
 
+/* MOBILE MENU */
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -399,6 +401,10 @@ footer {
   .logo-footer {
     text-align: left;
   }
+}
+
+.idea {
+  color: var(--cloud, #f4f4fd);
 }
 
 .social-media {
@@ -659,6 +665,8 @@ footer {
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* INFO */
+
 .info {
   padding-bottom: 96px;
 }
@@ -762,6 +770,8 @@ footer {
   flex-shrink: 0;
 }
 
+/* OUT WORK */
+
 .our-work {
   display: none;
 }
@@ -783,43 +793,8 @@ footer {
   border: 1px solid var(--cornflower, #e7e9fc);
 }
 
-.members {
-  display: inline-flex;
-  justify-content: center;
-  row-gap: 72px;
-}
 
-@media screen and (min-width: 768px) {
-  .members {
-    row-gap: 64px;
-    column-gap: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .members {
-    row-gap: 0;
-  }
-}
-
-.person {
-  display: inline-flex;
-  flex-direction: column;
-
-  border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.member-name {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 32px auto;
-  text-align: center;
-}
+/* PORTFOLIO HTML */
 
 .portfolio-browser {
   padding-top: 48px;
@@ -990,8 +965,45 @@ footer {
   }
 }
 
-.idea {
-  color: var(--cloud, #f4f4fd);
+
+/* OUT REAM */
+
+.members {
+  display: inline-flex;
+  justify-content: center;
+  row-gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .members {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .members {
+    row-gap: 0;
+  }
+}
+
+.person {
+  display: inline-flex;
+  flex-direction: column;
+
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.member-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 32px auto;
+  text-align: center;
 }
 
 .our-team {
@@ -1027,6 +1039,8 @@ footer {
   width: 16px;
   height: 16px;
 }
+
+/* CUSTOMERS */
 
 .customers {
   display: flex;
@@ -1076,6 +1090,8 @@ footer {
   align-items: center;
   transition: var(--transition);
 }
+
+/* MODAL */
 
 .backdrop {
   position: fixed;
@@ -1289,6 +1305,8 @@ footer {
   opacity: 0;
   transition: var(--transition);
 }
+
+/* CONTACTS HTML */
 
 .smile {
   margin: 200px 0;
